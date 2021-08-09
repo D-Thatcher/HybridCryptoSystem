@@ -2,7 +2,7 @@
 A library of functions built around PyCrypto that combines asymmetric encryption using a public key, with the symmetric encryption of files
 
 # Purpose
-The main motivation of symmetric encryption is its efficiency. While, the benefit of asymmetric encryption is that a different key is used to encrypt files (public key) than is used to decrypt them (private key). This suggests using a combination of which, wherein, one can issue a public key that can be used to encrypt a symmetric encryption key, which can then be securely transfered.
+One of the benefits of symmetric encryption is its efficiency. Though, often we need to separate the key that is used to encrypt the files (public key) with the key used to decrypt them (private key). This feature is a property of asymmetric encryption, but notably decreases its performance. This suggests using a combination of which, wherein, one can issue a public key that can be used to encrypt a symmetric encryption key, which can then be securely transfered. Further, we can use a new symmetric encryption key each time, without requiring another handshake as the asymmetric key pair can remain the same.
 
 # Main Methods:
 
